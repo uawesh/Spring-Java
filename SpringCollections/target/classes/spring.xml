@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans 
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+        <bean id="prod" class="com.awesh.collections.Product" >
+ 
+        	<property name="pid" value="121" />
+ 
+        	<property name="pcode" value="gama" />
+        	<property name="colours">
+        		<set>
+        		  <value>gray</value>
+        		  <value>blue</value>
+        		  <value>green</value>
+        		  <value>orange</value>
+        		  <value>blue</value>
+        		</set>
+        	</property>
+        	<property name="pdims">
+        	<list>
+        		<value>12</value>
+        		<value>11</value>
+        		<value>2</value>
+        		<value>22</value>
+        	</list>
+        	</property>
+        	<property name="pinfo">
+        	 <map>
+        		<entry>
+        			<key><value>soap</value></key>
+        			<value>20</value>
+        		</entry>
+        		<entry>
+        		   <key>
+        		   <value>Drinks</value>
+        		   </key>
+        		   <value>15</value>
+        		</entry>
+        		<entry>
+        		<key><value>snaks</value></key>
+        		<value>30</value>
+        		</entry>
+        	 </map>
+        	</property>
+        </bean>
+        
+        </beans>
